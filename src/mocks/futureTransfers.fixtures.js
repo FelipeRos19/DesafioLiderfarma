@@ -32,7 +32,7 @@ const motivosExclusao = [
     "",
 ]
 
-const statuses = ["PERMITIDO", "NAO_PERMITIDO"]
+const status = ["PERMITIDO", "NAO_PERMITIDO"]
 
 const pick = (arr) => arr[Math.floor(Math.random() * arr.length)]
 
@@ -51,7 +51,7 @@ const generateItem = (id) => {
         loja_origem: lojaOrigem,
         loja_destino: lojaDestino,
         quantidade: Math.floor(Math.random() * 50),
-        status: pick(statuses),
+        status: pick(status),
         problema_alvo: pick(problemasAlvo),
         motivo_exclusao: pick(motivosExclusao),
     }
